@@ -1,0 +1,151 @@
+/* ===== User List Styles ===== */
+
+.user-list-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.user-list-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-list-header button {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.user-list-header button:hover {
+  background-color: #574fd6;
+}
+
+/* ===== Table Styles ===== */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.user-table thead {
+  background: #f5f5f5;
+}
+
+.user-table th,
+.user-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  color: #444;
+}
+
+.user-table th {
+  font-weight: 600;
+  color: #222;
+  font-size: 13px;
+}
+
+.user-table tr:hover {
+  background: #fafafa;
+}
+
+/* ===== Status Badges ===== */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #e6f8ec;
+  color: #2e7d32;
+}
+
+.status.inactive {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.status.pending {
+  background: #fff4e5;
+  color: #ef6c00;
+}
+
+.status.hold {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+/* ===== Action Buttons ===== */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.actions button.edit {
+  color: #1976d2;
+}
+
+.actions button.delete {
+  color: #d32f2f;
+}
+
+.actions button:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+/* ===== Pagination ===== */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  gap: 6px;
+}
+
+.pagination button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.pagination button:hover {
+  background: #f0f0f0;
+}
+
+.pagination button.active {
+  background: #6c63ff;
+  color: #fff;
+  border-color: #6c63ff;
+}
